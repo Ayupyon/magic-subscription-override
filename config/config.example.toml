@@ -1,0 +1,15 @@
+refresh_cron = "*/30 * * * *"
+
+[server]
+host = "127.0.0.1"
+port = 8080
+
+[[subscriptions]]
+id = "personal"
+url = "https://provider.example/subscription"
+override = "overrides/personal.py"
+
+[[subscriptions]]
+id = "original"
+url = "https://provider.example/subscription"
+override = ""
